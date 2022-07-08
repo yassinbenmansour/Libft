@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybenmans <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/08 19:39:07 by ybenmans          #+#    #+#             */
-/*   Updated: 2022/06/08 19:39:15 by ybenmans         ###   ########.fr       */
+/*   Created: 2022/07/03 19:39:07 by ybenmans          #+#    #+#             */
+/*   Updated: 2022/07/04 12:14:15 by ybenmans         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,5 @@ char 	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
+
+#endif
