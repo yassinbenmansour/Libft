@@ -15,7 +15,7 @@
 
 int ft_atoi(const char *str)
 {
-	int nresult ;
+	int result ;
 	int sign ;
 
 	result = 0 ;
@@ -30,8 +30,8 @@ int ft_atoi(const char *str)
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		resultat = resultat * 10 + (*str - '0');
+		result = result * 10 + (*str - '0');
 		str++;
 	}
-	return (resultat * sign);
+	return (result * sign);
 }
