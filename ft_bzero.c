@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybenmans <zybenmans@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ybenmans <ybenmans@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 15:01:42 by zrdouane          #+#    #+#             */
 /*   Updated: 2021/11/29 12:32:39 by zrdouane         ###   ########.fr       */
