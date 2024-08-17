@@ -41,6 +41,7 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		*ft_itoa(int n);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		**ft_split(char const *s, char c);
+
 typedef struct s_list
 {
 	void			*content;

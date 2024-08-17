@@ -1,5 +1,5 @@
 # libft
-Libft (42cursus) 2022-2023
+Libft (42cursus) 2024
 
 - Actual Status : 
 - Result        : 
