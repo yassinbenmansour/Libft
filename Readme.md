@@ -121,12 +121,6 @@ $ gcc main.c -L . -lft
 ```
 
 
-# :bug: Issues
-
-Please feel free **to create a new issue** with its title and description on the issues page of the [Libft](https://github.com/jdecorte-be/42-Libft/issues) Repository. If you have already found the solution to the problem, **I would love to review your pull request**!
-
-
-Give ⭐️ if you like this project, this will help me!
 
 
 
