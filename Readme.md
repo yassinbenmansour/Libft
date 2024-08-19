@@ -16,7 +16,6 @@
 
 
 
-
 # :pushpin: Index
 
 * [What's this Repo?](#sparkles-What-is-Libft?)
