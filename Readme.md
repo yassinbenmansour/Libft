@@ -9,19 +9,9 @@
   <p align="center">
     Projet Libft (42cursus) 2024
     <br />
-    <a href="https://github.com/JohnDbe/42-Libft/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
-</p>
-
-
-<p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size//yassinbenmansour/Libft?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/yassinbenmansour/Libft?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/yassinbenmansour/Libft?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/yassinbenmansour/Libft?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit//yassinbenmansour/Libft?color=green" />
 </p>
 
 
