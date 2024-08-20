@@ -6,7 +6,7 @@
 #    By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/20 03:27:23 by yabenman          #+#    #+#              #
-#    Updated: 2024/08/20 03:29:52 by yabenman         ###   ########.fr        #
+#    Updated: 2024/08/20 03:45:06 by yabenman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,4 +18,6 @@ INC = libft.h
 SRC =		ft_isalnum\
 			ft_isdigit\
 			ft_isalpha\
+			ft_isascii\
+			ft_isprint\
 	
