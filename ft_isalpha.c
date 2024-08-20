@@ -1,12 +1,13 @@
 #include "libft.h"
-#include <stdio.h>
-int isalpha( int character ){
-    // if((character >= 65 && character <= 90)
-    //         || (character >= 97 && character <= 122))
+// #include <stdio.h>
+
+int isalpha( int c){
+    // if((c >= 65 && c <= 90)
+    //         || (c >= 97 && c <= 122))
     //         return 1;
 
-     if((character >= 'a' && character <= 'z')
-            || (character >= 'A' && character <= 'Z'))
+     if((c >= 'a' && c <= 'z')
+            || (c >= 'A' && c <= 'Z'))
             return 1;
     return 0;
 }
