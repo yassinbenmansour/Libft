@@ -5,7 +5,10 @@
 # include <string.h>
 
 
-int isalpha( int character );
+int isalpha( int c );
+int isdigit( int c );
+int isalnum( int c );
+
 
 
 #endif
