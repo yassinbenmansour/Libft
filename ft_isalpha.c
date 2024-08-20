@@ -1,5 +1,5 @@
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
 int isalpha( int c){
     // if((c >= 65 && c <= 90)
