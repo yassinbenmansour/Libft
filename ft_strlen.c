@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 03:57:43 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 04:04:41 by yabenman         ###   ########.fr       */
+/*   Created: 2024/08/20 22:12:35 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/20 22:24:57 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+size_t	ft_strlen(const char *s)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	size_t	length;
+
+	length = 0;
+	while (s[length])
+	{
+		length++;
+	}
+	return (length);
 }
 
-// int main(){
-//     printf("%c\n", ft_toupper('a'));
-//     printf("%c\n", ft_toupper('A'));
-//     printf("%c\n", ft_toupper('1'));
+// int main() {
+//     const char *str = "Hello world";
+
+//     printf("%zu\n", ft_strlen(str));
+//     printf("%zu\n", ft_strlen("\0"));
+//     printf("%zu\n", ft_strlen(""));
+
 //     return (0);
-// }
+//}
