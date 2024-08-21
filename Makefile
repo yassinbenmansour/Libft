@@ -6,7 +6,7 @@
 #    By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/20 03:27:23 by yabenman          #+#    #+#              #
-#    Updated: 2024/08/21 03:38:17 by yabenman         ###   ########.fr        #
+#    Updated: 2024/08/21 03:50:38 by yabenman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,10 @@ SRC =		ft_isalnum.c\
 			ft_tolower.c\
 			ft_strlen.c\
 			ft_atoi.c\
+			ft_strlcpy.c\
+			ft_strlcat.c\
+			ft_strlcpy.c\
+
 OBJ = $(SRC:%.c=%.o)
 
 all : $(NAME)
