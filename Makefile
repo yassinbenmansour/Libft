@@ -6,7 +6,7 @@
 #    By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/20 03:27:23 by yabenman          #+#    #+#              #
-#    Updated: 2024/08/21 03:50:38 by yabenman         ###   ########.fr        #
+#    Updated: 2024/08/21 23:55:44 by yabenman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,9 @@ SRC =		ft_isalnum.c\
 			ft_strlcpy.c\
 			ft_strlcat.c\
 			ft_strlcpy.c\
+			ft_strncmp.c\
+			ft_strrchr.c\
+			ft_strchr.c\
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -36,7 +39,7 @@ $(NAME) : $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
 %.o : %.c $(INC)
-	gcc -CC $(CFLAGS) $< -o $@
+	gcc -c $(CFLAGS) $< -o $@
 
 clean :
 	@rm -rf $(OBJ)
