@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:26:41 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 22:22:22 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/08/21 03:50:47 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
+int		ft_atoi(const char *str);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 #endif
