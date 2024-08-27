@@ -6,7 +6,7 @@
 #    By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/20 03:27:23 by yabenman          #+#    #+#              #
-#    Updated: 2024/08/21 23:55:44 by yabenman         ###   ########.fr        #
+#    Updated: 2024/08/27 01:52:26 by yabenman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SRC =		ft_isalnum.c\
 			ft_strncmp.c\
 			ft_strrchr.c\
 			ft_strchr.c\
-
+			ft_memset.c\
 OBJ = $(SRC:%.c=%.o)
 
 all : $(NAME)
