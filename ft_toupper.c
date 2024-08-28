@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 03:57:43 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 04:04:41 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:15:41 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 19:01:11 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
-// int main(){
-//     printf("%c\n", ft_toupper('a'));
-//     printf("%c\n", ft_toupper('A'));
-//     printf("%c\n", ft_toupper('1'));
-//     return (0);
-// }

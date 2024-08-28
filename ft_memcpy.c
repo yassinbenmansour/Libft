@@ -1,47 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 15:11:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:59:47 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:05:41 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:57:48 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
+	if (!dest && !src)
+		return (0);
 	i = 0;
-	if (dstsize == '\0')
+	while (i < n)
 	{
-		while (src[i])
-			i++;
-		return (i);
-	}
-	while (i < (dstsize - 1) && src[i] != '\0')
-	{
-		dst[i] = src[i];
+		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (dest);
 }
 /*
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
-        char dest[27];
+	int a;
+	int	b = 513;
+	int *s = ft_memcpy(&a, &b, 1);
+	printf("%d\n", s[0]);
 
-        printf("%ld\n",ft_strlcpy(dest, src, 9));
-
-		printf("%s\n", dest);
+	char str[] = "TARZANdhghfgh";
+    char str1[] = "MALIK";
+    printf("%s\n%s", str, str1);
 }
 */

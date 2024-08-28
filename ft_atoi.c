@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 23:55:05 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/21 20:41:05 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/09 05:56:24 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:54:27 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,13 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+/*
+int	main(void)
+{
+	char	*n;
 
-// int main(){
-//     printf("%d\n", atoi("123"));
-//     printf("%d\n", atoi("-123"));
-//     printf("%d\n", ft_atoi("123"));
-//     printf("%d\n", ft_atoi("-123"));
-//     return (0);
-// }
+	n = "945";
+	printf("%d\n",atoi(n));
+	printf("%d\n",ft_atoi(n));
+}
+*/

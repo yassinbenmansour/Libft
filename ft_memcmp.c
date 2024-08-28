@@ -1,47 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 15:11:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:59:47 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:04:58 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:57:22 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	unsigned char	*frst;
+	unsigned char	*scnd;
+	int				i;
 
 	i = 0;
-	if (dstsize == '\0')
+	frst = (unsigned char *)s1;
+	scnd = (unsigned char *)s2;
+	while (n--)
 	{
-		while (src[i])
-			i++;
-		return (i);
-	}
-	while (i < (dstsize - 1) && src[i] != '\0')
-	{
-		dst[i] = src[i];
+		if (frst[i] != scnd[i])
+			return (frst[i] - scnd[i]);
 		i++;
 	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (0);
 }
 /*
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
-        char dest[27];
+        char k[] = "fallahi";
+        char l[] = "fellahi";
 
-        printf("%ld\n",ft_strlcpy(dest, src, 9));
-
-		printf("%s\n", dest);
+        printf("%d\n",ft_memcmp(k,l,1));
 }
 */

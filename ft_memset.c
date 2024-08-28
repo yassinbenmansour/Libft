@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 22:02:45 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/27 01:52:03 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:09:02 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:58:19 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	unsigned char	*s;
 
 	a = 0;
-	s = (unsigned char *)b;
+	s = (unsigned char *) b;
 	while (a < len)
 	{
 		s[a] = c;
@@ -26,23 +26,28 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+/*
+int main()
+{
+	    int t[5] = {1,2,4,2,5};
+        int *r;
+        r = ft_memset(t,10,4);
+        int i = 0;
+        while (i < 5)
+        {
+                printf("%d\n",r[i]);
+                i++;
+        }
 
-// int main(void)
-// {
-//     char buffer[10];  // Création d'un tableau de 10 octets
+    char str[50] = "Let us see a simple example in C";
+    printf("\nBefore memset(): %s\n", str);
 
-//
-// Appel de ft_memset pour remplir le tableau avec la valeur 0x41 ('A' en ASCII)
-//     ft_memset(buffer, 0x41, sizeof(buffer));
+    // Fill 8 characters starting from str[13] with '.'
+    ft_memset(str, '.', 4*sizeof(char));
 
-//     // Affichage des valeurs du tableau
-//     printf("Contenu du buffer après memset : ");
-//     for (int i = 0; i < 10; i++)
-//     {
-//         printf("%c ", buffer[i]);
-// Chaque valeur sera affichée comme un caractère
-//     }
-//     printf("\n");
+    printf("After memset():  %s\n", str);
 
-//     return (0);
-// }
+    char str1[50] = "Let us see a simple example in C";
+    printf("\nBefore memset(): %s\n", str1);
+}
+*/

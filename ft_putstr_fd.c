@@ -1,47 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 15:11:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:59:47 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:31:54 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:58:51 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	if (dstsize == '\0')
+	if (!s)
+		return ;
+	while (s[i])
 	{
-		while (src[i])
-			i++;
-		return (i);
-	}
-	while (i < (dstsize - 1) && src[i] != '\0')
-	{
-		dst[i] = src[i];
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
 }
 /*
+#include <fcntl.h>
+
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
-        char dest[27];
+	int	fd;
 
-        printf("%ld\n",ft_strlcpy(dest, src, 9));
-
-		printf("%s\n", dest);
+	fd = open("ft_putstr_fd.txt", O_CREAT | O_RDWR);
+	ft_putstr_fd("TARZAN" "NADY" "BZAF", fd);
 }
 */
