@@ -1,47 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 15:11:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:59:47 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/17 17:36:26 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:58:44 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	i;
+	long	x;
 
-	i = 0;
-	if (dstsize == '\0')
+	x = n;
+	if (x < 0)
 	{
-		while (src[i])
-			i++;
-		return (i);
+		x = -x;
+		write(fd, "-", 1);
 	}
-	while (i < (dstsize - 1) && src[i] != '\0')
+	if (x <= 9)
 	{
-		dst[i] = src[i];
-		i++;
+		x = x + 48;
+		write(fd, &x, 1);
 	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	else
+	{
+		ft_putnbr_fd(x / 10, fd);
+		ft_putnbr_fd(x % 10, fd);
+	}
 }
 /*
+#include <fcntl.h>
+
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
-        char dest[27];
+	int	fd;
 
-        printf("%ld\n",ft_strlcpy(dest, src, 9));
-
-		printf("%s\n", dest);
+	fd = open("ft_putnbr_fd.txt", O_CREAT | O_RDWR);
+	ft_putnbr_fd(541, fd);
 }
 */

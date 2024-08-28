@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/21 20:02:48 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/21 23:53:19 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/19 00:59:43 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 19:00:11 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /*
 int main()
 {
-	char s1[10] = "lazy ";
-	char s2[10] = "lazy ";
+	char s1[10] = "fallahi ";
+	char s2[10] = "fellahi ";
 
 	printf("ft_strncmp %d .\n", ft_strncmp(s1,s2,2));
 	printf("strncmp %d .\n",    strncmp(s1,s2,2));

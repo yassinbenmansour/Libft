@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 03:40:02 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 03:44:24 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 14:56:09 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:55:51 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-// int main(){
-//     printf("%d \n", ft_isprint('A'));
-//     printf("%d \n", ft_isprint('a'));
-//     printf("%d \n", ft_isprint('1'));
-//     printf("%d \n", ft_isprint('\n'));
-//     printf("%d \n", ft_isprint('\t'));
-//     printf("%d \n", ft_isprint('\0'));
-//     return (0);
-// }

@@ -1,47 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 15:11:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:59:47 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/12 12:22:02 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:59:34 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
+	size_t	lenth1;
+	size_t	lenth2;
+	char	*result;
 
-	i = 0;
-	if (dstsize == '\0')
+	lenth1 = ft_strlen(s1);
+	lenth2 = ft_strlen(s2);
+	result = malloc(lenth1 + lenth2 + 1);
+	if (result)
 	{
-		while (src[i])
-			i++;
-		return (i);
+		ft_memcpy(result, s1, lenth1);
+		ft_memcpy(result + lenth1, s2, lenth2 + 1);
 	}
-	while (i < (dstsize - 1) && src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	if (i < dstsize)
-		dst[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (result);
 }
 /*
+#include <stdio.h>
+
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
-        char dest[27];
-
-        printf("%ld\n",ft_strlcpy(dest, src, 9));
-
-		printf("%s\n", dest);
+	char	*s1 = "my favorite thing is ";
+	char	*s2 = "profile ";
+	char	*s3 = "DIAL 7ARZAN";
+	printf("%s\n",ft_strjoin(ft_strjoin(s1, s2), s3));
 }
 */

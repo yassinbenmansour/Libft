@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/21 20:02:53 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/21 23:54:28 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:39:02 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 19:00:38 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,9 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 /*
-int	main(void)
+int main()
 {
-	char	s1[20] = "fallahi ";
-
-	printf("fst occurence %s .\n", ft_strrchr(s1, 'f'));
+	char s1[20] = "fallahi ";
+    printf("fst occurence %s .\n", ft_strrchr(s1, 'f'));
 }
 */

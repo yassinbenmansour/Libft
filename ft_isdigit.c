@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 03:27:06 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 03:39:04 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 14:54:43 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:55:42 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,13 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-// int main(){
-//      printf("%d\n", ft_isdigit(5));
-//      printf("%d\n", ft_isdigit('5'));
-//      printf("%d\n", ft_isdigit('a'));
-//      printf("%d\n", ft_isdigit('A'));
-
-//      return (0);
-// }
+/*
+int main()
+{
+	printf("%d\n",ft_isdigit('5'));
+    printf("%d\n",ft_isdigit('H'));
+    printf("%d\n",ft_isdigit('&'));
+    printf("%d\n",ft_isdigit(200));
+    printf("%d\n",ft_isdigit(0));
+}
+*/

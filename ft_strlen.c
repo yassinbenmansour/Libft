@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 22:12:35 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 22:24:57 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 15:14:13 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:59:53 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	length;
+	int	i;
 
-	length = 0;
-	while (s[length])
-	{
-		length++;
-	}
-	return (length);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
+/*
+int main()
+{
+	char *str;
 
-// int main() {
-//     const char *str = "Hello world";
-
-//     printf("%zu\n", ft_strlen(str));
-//     printf("%zu\n", ft_strlen("\0"));
-//     printf("%zu\n", ft_strlen(""));
-
-//     return (0);
-//}
+    str = "slimka";
+    printf("%zu\n",ft_strlen(str));
+    printf("%zu\n",ft_strlen(NULL));
+    printf("%zu\n",ft_strlen('\0'));
+    printf("%zu\n",ft_strlen(""));
+}
+*/

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/20 03:31:55 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/20 03:38:34 by yabenman         ###   ########.fr       */
+/*   Created: 2022/10/05 14:48:37 by yabenman          #+#    #+#             */
+/*   Updated: 2024/08/28 18:55:34 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-
-// int main(){
-//     printf("%d\n", ft_isascii(65));
-//     printf("%d\n", ft_isascii(128));
-//     printf("%d\n", ft_isascii(-5));
-//     printf("%d\n", ft_isascii('-'));
-//     return (0);
-// }
+/*
+int main()
+{
+	printf("%d\n",ft_isascii('5'));
+    printf("%d\n",ft_isascii(-5));
+    printf("%d\n",ft_isascii('~'));
+    printf("%d\n",ft_isascii(0));
+}
+*/
