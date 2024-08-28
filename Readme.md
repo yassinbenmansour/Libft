@@ -78,17 +78,6 @@ At 42 we're not allowed to use some standard libraries on our projects, so we ha
 - [x] [`ft_putendl_fd`](ft_putendl_fd.c)	- output a string to a file descriptor, followed by a new line.
 - [x] [`ft_putnbr_fd`](ft_putnbr_fd.c)	- output a number to a file descriptor.
 
-## Linked list functions
-
-- [x] [`ft_lstnew`](ft_lstnew.c)	- creates a new list element.
-- [x] [`ft_lstadd_front`](ft_lstadd_front.c)	- adds an element at the beginning of a list.
-- [x] [`ft_lstsize`](ft_lstsize.c)	- counts the number of elements in a list.
-- [x] [`ft_lstlast`](ft_lstlast.c)	- returns the last element of the list.
-- [x] [`ft_lstadd_back`](ft_lstadd_back.c)	- adds an element at the end of a list.
-- [x] [`ft_lstclear`](ft_lstclear.c)	- deletes and free list.
-- [x] [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list.
-- [x] [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list.
-
 ---
 
 # :computer: Technologies
