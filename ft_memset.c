@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:09:02 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:58:19 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/08/31 19:51:16 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	unsigned char	*s;
 
 	a = 0;
-	s = (unsigned char *) b;
+	s = (unsigned char *)b;
 	while (a < len)
 	{
 		s[a] = c;
@@ -26,28 +26,17 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-int main()
-{
-	    int t[5] = {1,2,4,2,5};
-        int *r;
-        r = ft_memset(t,10,4);
-        int i = 0;
-        while (i < 5)
-        {
-                printf("%d\n",r[i]);
-                i++;
-        }
 
-    char str[50] = "Let us see a simple example in C";
-    printf("\nBefore memset(): %s\n", str);
+// int main()
+// {
+//     int t[5] = {1, 2, 4, 2, 5};
+//     int i;
 
-    // Fill 8 characters starting from str[13] with '.'
-    ft_memset(str, '.', 4*sizeof(char));
+//     ft_memset(t, 10, 4);
 
-    printf("After memset():  %s\n", str);
+//     for (i = 0; i < 5; i++) {
+//         printf("%d\n", t[i]);
+//     }
 
-    char str1[50] = "Let us see a simple example in C";
-    printf("\nBefore memset(): %s\n", str1);
-}
-*/
+//     return (0);
+// }

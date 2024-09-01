@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Applications/Developer/1337 PROJECTS/Libft",
-      "program": "/Applications/Developer/1337 PROJECTS/Libft/build/Debug/outDebug"
+      "cwd": "/Applications/Developer/1337 PROJECTS/libft",
+      "program": "/Applications/Developer/1337 PROJECTS/libft/build/Debug/outDebug"
     }
   ]
 }
