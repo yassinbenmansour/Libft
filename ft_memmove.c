@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:07:27 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 18:58:05 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/09/06 23:40:50 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,36 +37,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-int main()
-{
-	char *h = ft_strdup("Dans cette première partie");
-        ft_memmove(h+4, h, 27);
-	printf("%s\n", h+4 );
 
-
-	char str1[] = "Geeks"; // Array of size 100
-    char str2[] = "Quiz"; // Array of size 5
-
-    puts("str1 before memmove ");
-    puts(str1);
-
-
-
-
-
-    Copies contents of str2 to sr1
-    memmove(str1, str2, sizeof(str2));
-
-    puts("\nstr1 after memmove ");
-    puts(str1);
-
-    int t[4] = {1,2,3};
-
-    ft_memmove(t+2,t,sizeof(t));
-    int i = 1;
-       while (i < 4)
-        {
-                printf("%d\n",t[i++]);
-		}
-*/
+// int main()
+// {
+// 	char str[] = "Hello, world!";
+// 	printf("%s \n", str);
+// 	ft_memmove(str, str+7,6);
+// 	printf("%s \n", str);
+// 	ft_memmove(str+2, str+7,6);
+// 	printf("%s \n", str);
+// 	return (0);
+// }
