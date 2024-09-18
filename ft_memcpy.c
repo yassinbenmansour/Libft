@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 15:05:41 by yabenman          #+#    #+#             */
-/*   Updated: 2024/09/01 17:53:01 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/09/18 07:40:42 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int	main(void)
-{
-	int	a;
-	int	b;
-	int	*s;
+// int	main(void)
+// {
+// 	int	a;
+// 	int	b;
+// 	int	*s;
 
-	b = 513;
-	s = ft_memcpy(&a, &b, sizeof(char) * 4);
-	printf("%d\n", *s);
-	return (0);
-}
+// 	b = 513;
+// 	s = ft_memcpy(&a, &b, sizeof(char) * 4);
+// 	printf("%d\n", *s);
+// 	return (0);
+// }
