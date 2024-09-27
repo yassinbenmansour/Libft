@@ -5,40 +5,80 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 11:35:46 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 19:00:47 by yabenman         ###   ########.fr       */
+/*   Created: 2024/09/27 16:18:52 by yabenman          #+#    #+#             */
+/*   Updated: 2024/09/27 16:22:45 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+static int	is_exist(const char *ptr, char c)
 {
-	size_t		start;
-	size_t		end;
-	size_t		i;
+	int	i;
 
-	if (!s1)
-		return (0);
 	i = 0;
-	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (s1[i] && ft_strchr(set, s1[i]))
-		start = (i++) + 1;
-	if (start >= ft_strlen(s1))
-		return ((char *)ft_calloc(sizeof(char), 1));
-	i = ft_strlen(s1) -1;
-	while (i && s1[i] && ft_strchr(set, s1[i]))
-		end = (i--) - 1;
-	return (ft_substr(s1, start, (end - start + 1)));
+	while (ptr[i])
+	{
+		if (ptr[i] == c)
+		{
+			return (1);
+		}
+		i++;
+	}
+	return (0);
 }
+
+static int	get_end(const char *s1, const char *set)
+{
+	int	len;
+
+	len = ft_strlen(s1);
+	if (len == 0)
+		return (0);
+	while (--len)
+	{
+		if (is_exist(set, s1[len]) == 0)
+			return (len);
+	}
+	return (0);
+}
+
+static int	get_start(const char *s1, const char *set)
+{
+	int	i;
+
+	i = 0;
+	while (s1[i])
+	{
+		if (is_exist(set, s1[i]) == 0)
+			return (i);
+		i++;
+	}
+	return (-1);
+}
+
+char	*ft_strtrim(const char *s1, const char *set)
+{
+	int	end;
+	int	start;
+
+	if (!s1 || !set)
+		return ((char *)s1);
+	start = get_start(s1, set);
+	end = get_end(s1, set);
+	if (start < 0)
+		return (ft_strdup(""));
+	return (ft_substr(s1 + start, 0, (end - start + 1)));
+}
+
 /*
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
 	const char	*s1 = "ba ter  ab";
 	const char	*s2 = "ab";
 
-        printf("%s.\n", ft_strtrim(s1,s2));
-}*/
+	printf("%s.\n", ft_strtrim(s1, s2));
+}
+*/
