@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 00:59:43 by yabenman          #+#    #+#             */
-/*   Updated: 2024/09/19 10:40:50 by yabenman         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -26,8 +15,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /*
 int main()
 {
-	char s1[10] = "fallahi ";
-	char s2[10] = "fellahi ";
+	char s1[10] = "yassine ";
+	char s2[10] = "yassine ";
 
 	printf("ft_strncmp %d .\n", ft_strncmp(s1,s2,2));
 	printf("strncmp %d .\n",    strncmp(s1,s2,2));
