@@ -6,46 +6,48 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:58:56 by yabenman          #+#    #+#             */
-/*   Updated: 2024/08/28 19:00:55 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/10/26 18:06:02 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static	unsigned	int	count_len(unsigned int nb, size_t len)
+{
+	if (nb < len)
+		return (nb);
+	return (len);
+}
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*substring;
-	size_t	s_len;
+	char			*p;
+	unsigned int	i;
+	size_t			l;
 
-	s_len = len;
 	if (!s)
 		return (NULL);
-	if (s_len > ft_strlen(s))
-	{
-		substring = (char *)malloc((unsigned int) ft_strlen(s) + 1);
-		s_len = ft_strlen(s) - start;
-	}
-	else
-		substring = (char *)malloc(s_len + 1);
-	if (!substring)
+	l = ft_strlen(s);
+	i = 0;
+	if (start >= l)
+		return (ft_strdup(""));
+	len = count_len((l - start), len);
+	p = (char *)malloc(sizeof(char) * (len + 1));
+	if (!p)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	while (i < len)
 	{
-		substring[0] = '\0';
-		return (substring);
+		p[i] = s[start + i];
+		i++;
 	}
-	ft_memcpy(substring, s + start, s_len);
-	substring[s_len] = '\0';
-	return (substring);
+	p[i] = '\0';
+	return (p);
 }
-/*
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-	char	*str = "i just want this part #############";
-        
-	char	*ret = ft_substr(str, 0, 22);
-        printf("%s. \n",ret);
-}
-*/
+// int main()
+// {
+// 	char	*str = "i just want this part #############"; 
+// 	char	*ret = ft_substr(str, 0, 22);
+//         printf("%s\n",ret);
+// }
