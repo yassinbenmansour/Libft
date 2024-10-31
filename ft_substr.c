@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/31 06:49:52 by yabenman          #+#    #+#             */
+/*   Updated: 2024/10/31 06:51:15 by yabenman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-static	unsigned	int	count_len(unsigned int nb, size_t len)
+unsigned	int	count_len(unsigned int nb, size_t len)
 {
 	if (nb < len)
 		return (nb);

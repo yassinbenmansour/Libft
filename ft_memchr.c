@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/31 06:46:46 by yabenman          #+#    #+#             */
+/*   Updated: 2024/10/31 06:52:31 by yabenman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -19,19 +30,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 /*
 int	main(void)
 {
-		int t[4] = {3,2,1,0};
+	int t[4] = {3,2,1,0};
 	int	c;
-		int *p;
+	int *p;
 	int	i;
-		char k[] = "fallahi";
-		char *str;
+	char k[] = "yassine";
+	char *str;
 
-		c = 2;
-		p = ft_memchr(t,c,6);
-		i = 0;
-		while(i < 3)
-				printf("%d",p[i++]);
-		str =ft_memchr(k, 'a',4);
-		printf("%s\n",str);
+	c = 2;
+	p = ft_memchr(t,c,6);
+	i = 0;
+	while(i < 3)
+		printf("%d",p[i++]);
+	str =ft_memchr(k, 'a',4);
+	printf("%s\n",str);
 }
 */

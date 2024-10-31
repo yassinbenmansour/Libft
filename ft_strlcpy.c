@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/31 06:49:06 by yabenman          #+#    #+#             */
+/*   Updated: 2024/10/31 06:51:36 by yabenman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -26,7 +37,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 /*
 int main()
 {
-	    char src[] = "7ARZAN DA BEST!";
+	    char src[] = "Lazy0ben DA BEST!";
         char dest[27];
 
         printf("%ld\n",ft_strlcpy(dest, src, 9));

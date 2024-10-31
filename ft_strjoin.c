@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/31 06:48:52 by yabenman          #+#    #+#             */
+/*   Updated: 2024/10/31 06:51:41 by yabenman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -39,7 +50,7 @@ int	main(void)
 
 	s1 = "my favorite thing is ";
 	s2 = "profile ";
-	s3 = "DYAL BENMANSPUR";
+	s3 = "DYAL BENMANSOUR";
 	printf("%s\n",ft_strjoin(ft_strjoin(s1, s2), s3));
 }
 */
