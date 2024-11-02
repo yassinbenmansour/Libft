@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:49:21 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:51:30 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/02 04:03:09 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,16 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	str[index] = '\0';
 	return (str);
 }
-/*
-#include <stdio.h>
 
+// #include <stdio.h>
 
-char shift(unsigned int i, char c)
-{
-	return c + 1;
-}
+// char shift(unsigned int i, char c)
+// {
+// 	return c + 1;
+// }
 
-int main()
-{
-	char 	str[] = "absddzed";
-	printf("%s\n",ft_strmapi(str, shift));
-}
-*/
+// int main()
+// {
+// 	char 	str[] = "absddzed";
+// 	printf("%s\n",ft_strmapi(str, shift));
+// }

@@ -6,17 +6,14 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:50:11 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:51:05 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/02 05:40:40 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd);

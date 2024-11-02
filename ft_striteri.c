@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:48:41 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:51:44 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/02 04:02:46 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	while (s[++index] != '\0')
 		(*f)(index, &s[index]);
 }
-/*
-int main()
-{
-        char    str[] ="aaaa";
-        ft_striteri(str,f1);
-        printf("%s\n",str);  
-}
-*/
+
+// void f1(unsigned int index, char *c)
+// {
+//     *c = *c + 1;
+// }
+
+// int main()
+// {
+//     char str[] = "abcd";
+//     ft_striteri(str, f1);
+//     printf("%s\n", str);  
+//     return 0;
+// }

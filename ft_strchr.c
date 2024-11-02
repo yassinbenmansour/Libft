@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:48:29 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:51:59 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/02 06:46:19 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	int	size;
 
 	i = 0;
-	size = (int)strlen(s);
+	size = (int)ft_strlen(s);
 	while (i <= size)
 	{
 		if (s[i] == (char)c)

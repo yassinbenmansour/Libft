@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:46:42 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:52:36 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/01 00:31:00 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ int main()
 	char	*i2 = ft_itoa(156);
 	char	*i3 = ft_itoa(-0);
 
-        printf ("%d\n", strcmp(i1,"-623"));
-        printf ("%d\n", strcmp(i2,"156"));
-        printf ("%d\n", strcmp(i3,"0"));
+    printf ("%d\n", strcmp(i1,"-623"));
+    printf ("%d\n", strcmp(i2,"156"));
+    printf ("%d\n", strcmp(i3,"0"));
 }
 */
