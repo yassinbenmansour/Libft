@@ -6,7 +6,7 @@
 #    By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/31 06:50:23 by yabenman          #+#    #+#              #
-#    Updated: 2024/11/01 03:06:45 by yabenman         ###   ########.fr        #
+#    Updated: 2024/11/02 22:30:16 by yabenman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,3 +69,5 @@ fclean :
 		@rm -f $(NAME)  $(OBJ)
 
 re : fclean all
+
+.PHONY: all clean fclean re
