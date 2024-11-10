@@ -37,6 +37,10 @@ void	*ft_memset(void *b, int c, size_t len)
 //     for (i = 0; i < 5; i++) {
 //         printf("%d\n", t[i]);
 //     }
+// char str[50] = "GeeksForGeeks is for programming geeks.";
+// 	printf("\nBefore memset(): %s\n", str);
 
+// 	ft_memset(str + 13, '.', 8);
+// 	printf("After memset():  %s\n", str);
 //     return (0);
 // }

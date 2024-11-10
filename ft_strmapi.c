@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char			*str;
 
 	index = 0;
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	str = (char *)malloc(ft_strlen(s) + 1);
 	if (str == NULL)
@@ -33,14 +33,14 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 }
 
 // #include <stdio.h>
-
+//
 // char shift(unsigned int i, char c)
 // {
 // 	return c + 1;
 // }
-
+//
 // int main()
 // {
 // 	char 	str[] = "absddzed";
-// 	printf("%s\n",ft_strmapi(str, shift));
+// 	printf("%s\n",ft_strmapi(NULL, NULL));
 // }

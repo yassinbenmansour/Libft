@@ -37,15 +37,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char	*s1 = "SASDASEAWEAFFASEAS F F FF ";
-	char	*s2 = "FF";
-	size_t	max = strlen(s1);
 
-	char	*i2 = ft_strnstr(s1, s2, max);
-        printf("%s.\n",i2);
-}
-*/
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+// 	char	*s1 = "SASDASEAWEAFFASEAS F F FF ";
+// 	char	*s2 = "FF";
+// 	size_t	max = strlen(s1);
+
+// 	char	*i2 = ft_strnstr(s1, s2, max);
+//         printf("%s\n",i2);
+// }

@@ -6,7 +6,7 @@
 /*   By: yabenman <yabenman@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 06:49:46 by yabenman          #+#    #+#             */
-/*   Updated: 2024/10/31 06:51:18 by yabenman         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:14:31 by yabenman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,15 +70,12 @@ char	*ft_strtrim(const char *s1, const char *set)
 		return (ft_strdup(""));
 	return (ft_substr(s1 + start, 0, (end - start + 1)));
 }
+// #include <stdio.h>
 
-/*
-#include <stdio.h>
+// int	main(void)
+// {
+// 	const char	*s1 = "ba ter  ab";
+// 	const char	*s2 = "ab";
 
-int	main(void)
-{
-	const char	*s1 = "ba ter  ab";
-	const char	*s2 = "ab";
-
-	printf("%s.\n", ft_strtrim(s1, s2));
-}
-*/
+// 	printf("%s\n", ft_strtrim(NULL, s2));
+// }

@@ -19,7 +19,7 @@ static size_t	count_words(char const *s, char c)
 
 	i = 0;
 	count = 0;
-	while (s[i] != '\0')
+	while (s && s[i] != '\0')
 	{
 		while (s[i] == c)
 			i++;
@@ -58,16 +58,16 @@ char	**ft_split(char const *s, char c)
 	tab[i] = 0;
 	return (tab);
 }
-/*
-int main() 
-{
-	int i = 0;
-    char **test = ft_split("\0Hello\0World", '\0');
-    while(test[i])
-	{
-		printf("%s", test[i]);
-		i++;
-	}
-	return 0;
-}
-*/
+// #include <stdio.h>
+//
+// int main()
+// {
+// 	int i = 0;
+//     char **test = ft_split(NULL, '\0');
+//     while(test[i])
+// 	{
+// 		printf("%s", test[i]);
+// 		i++;
+// 	}
+// 	return 0;
+// }

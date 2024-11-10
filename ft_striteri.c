@@ -32,6 +32,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 // {
 //     char str[] = "abcd";
 //     ft_striteri(str, f1);
-//     printf("%s\n", str);  
+//     printf("%s\n", str);
 //     return 0;
 // }

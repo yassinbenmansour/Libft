@@ -12,7 +12,7 @@
 
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror
-CC = gcc
+CC = cc
 RM = rm -rf
 INC = libft.h								
 SRC =		ft_isalpha.c\
@@ -60,7 +60,7 @@ $(NAME) : $(OBJ)
 		ar rc $(NAME) $(OBJ)
 
 %.o : %.c $(INC)													
-		gcc -c $(CFLAGS) $< -o $@
+		cc -c $(CFLAGS) $< -o $@
 
 clean :
 		@rm -rf  $(OBJ)

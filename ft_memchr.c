@@ -22,27 +22,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if ((unsigned char)str[i] == (unsigned char)c)
-			return ((char *)s + i);
+			return ((void *)s + i);
 		i++;
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	int t[4] = {3,2,1,0};
-	int	c;
-	int *p;
-	int	i;
-	char k[] = "yassine";
-	char *str;
 
-	c = 2;
-	p = ft_memchr(t,c,6);
-	i = 0;
-	while(i < 3)
-		printf("%d",p[i++]);
-	str =ft_memchr(k, 'a',4);
-	printf("%s\n",str);
-}
-*/
+// int	main(void)
+// {
+// 	char k[] = "yassine";
+// 	char *str;
+// 	str =ft_memchr(k, 'a',4);
+// 	printf("%s\n",str);
+// 	str = memchr(k, 'a',4);
+// 	printf("%s\n",str);
+
+// }

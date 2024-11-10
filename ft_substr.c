@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-unsigned	int	count_len(unsigned int nb, size_t len)
+static unsigned	int	count_len(unsigned int nb, size_t len)
 {
 	if (nb < len)
 		return (nb);
@@ -44,10 +44,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (p);
 }
 // #include <stdio.h>
-
+//
 // int main()
 // {
-// 	char	*str = "i just want this part #############"; 
-// 	char	*ret = ft_substr(str, 0, 22);
-//         printf("%s\n",ret);
+// 	char	*str = "i just want this part #############";
+// 	char	*ret = ft_substr(NULL,NULL,NULL);
+//   	printf("%s\n",ret);
+// 	return 0;
 // }

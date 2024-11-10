@@ -21,8 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	s = (char *)src;
 	d = (char *)dst;
 	i = len;
-	if (src == NULL && dst == NULL)
-		return (NULL);
+	if (d == s)
+		return (dst);
 	if (d > s)
 		while (len-- > 0)
 			d[len] = s[len];
@@ -37,14 +37,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+// #include <stdio.h>
+// #include <string.h>
 
 // int main()
 // {
-// 	char str[] = "Hello, world!";
-// 	printf("%s \n", str);
-// 	ft_memmove(str, str+7,6);
-// 	printf("%s \n", str);
-// 	ft_memmove(str+2, str+7,6);
-// 	printf("%s \n", str);
+// 	char *str = "Hello, world!";
+// 	printf("%s \n", ft_memmove(NULL, "ABC", 6));
+// 	printf("%s \n",memmove(NULL, "ABC", 6));
+
 // 	return (0);
 // }

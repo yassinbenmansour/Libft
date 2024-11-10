@@ -53,15 +53,10 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
-int main()
-{
-    char	*i1 = ft_itoa(-623);
-	char	*i2 = ft_itoa(156);
-	char	*i3 = ft_itoa(-0);
-
-    printf ("%d\n", strcmp(i1,"-623"));
-    printf ("%d\n", strcmp(i2,"156"));
-    printf ("%d\n", strcmp(i3,"0"));
-}
-*/
+// #include <stdio.h>
+// int main()
+// {
+//     printf ("%s \n", ft_itoa(NULL));
+//     // printf ("%d\n", strcmp(i2,"156"));
+//     // printf ("%d\n", strcmp(i3,"0"));
+// }
